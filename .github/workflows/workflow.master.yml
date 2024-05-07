@@ -80,7 +80,7 @@ jobs:
     - uses: actions/checkout@v2.5.0 # Checking out the repo
 
     - name: Build and publish Docker Images to GitHub Container registry
-      uses: VaultVulp/gp-docker-action@1c8db60570e9056229d062ae1a78af6737bcf8b1
+      uses: VaultVulp/gp-docker-action@develop
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }} # Provide GITHUB_TOKEN to login into the GitHub Packages      
         image-name: my-cool-service # Provide Docker image name
